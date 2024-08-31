@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Roberto Fernández" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+    <title>Prueba CSS Avanzado</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- MENU NAV -->
+      <nav>
+        <p class="nombre-empresa">
+          <img
+            src="./assets/img/icons/iconoBlanco.png"
+            alr="Logo"
+            class="logo"
+          />
+          Propiedades Fernández
+        </p>
+        <div class="header-burger">
+          <span class="mdi mdi-menu"></span>
+        </div>
+        <div class="header-menu-desk">
+          <ul>
+            <li><a href="#casas">Casas en Venta</a></li>
+            <li><a href="#oficinas">Arriendo de Ofinicas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li>Ofertas</li>
+            <li>Redes Sociales</li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- TITULO -->
+      <section id="titulo">
+        <div class="titulo">
+          Comienza a vivir tu sueño de vida
+          <!-- <select name="cars" id="cars">
+            <option value="precio">Precio</option>
+          </select> -->
+        </div>
+      </section>
+
+      <main>
+        <!-- CASAS -->
+        <section id="casas">
+          <h1>CASAS EN venta</h1>
+          <div class="main-casas">
+            <div class="card">
+              <img
+                src="./assets/img/casa1.jpeg"
+                alt="Imagen casa"
+                class="imagenTabla"
+                id="box"
+              />
+              <div class="card-mobile-nombre">
+                <p class="nombreImagen">Casa Mediterránea</p>
+                <p class="ciudad">Rancagua</p>
+                <p class="precio">UF 15.000</p>
+              </div>
+              <button class="card-mobile-boton">Ver más</button>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/casa2.jpeg"
+                alt="Imagen Auto"
+                class="imagenTabla"
+                id="box"
+              />
+              <div class="card-mobile-nombre">
+                <p class="nombreImagen">Casa Mediterránea</p>
+                <p class="ciudad">Melipilla</p>
+                <p class="precio">UF 14.500</p>
+              </div>
+              <button class="card-mobile-boton">Ver más</button>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/casa3.jpeg"
+                alt="Imagen Auto"
+                class="imagenTabla"
+                id="box"
+              />
+              <div class="card-mobile-nombre">
+                <p class="nombreImagen">Casa Colonial</p>
+                <p class="ciudad">La Dehesa</p>
+                <p class="precio">UF 19.900</p>
+              </div>
+              <button class="card-mobile-boton">Ver más</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- OFICINAS -->
+        <section id="oficinas">
+          <h1>OFICINAS EN ARRIENDO</h1>
+          <div class="main-casas">
+            <div class="card">
+              <img
+                src="./assets/img/oficina1.jpeg"
+                alt="Imagen Auto"
+                class="imagenTabla"
+                id="box"
+              />
+              <div class="card-mobile-nombre">
+                <p class="nombreImagen">Oficina 90mt2</p>
+                <p class="ciudad">Santiago Centro</p>
+                <p class="precio">$2.500.000</p>
+              </div>
+              <button class="card-mobile-boton">Ver más</button>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/oficina2.jpeg"
+                alt="Imagen Auto"
+                class="imagenTabla"
+                id="box"
+              />
+              <div class="card-mobile-nombre">
+                <p class="nombreImagen">Oficina Privada 22mt2</p>
+                <p class="ciudad">Providencia</p>
+                <p class="precio">$1.500.000</p>
+              </div>
+              <button class="card-mobile-boton">Ver más</button>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/oficina3.jpeg"
+                alt="Imagen Auto"
+                class="imagenTabla"
+                id="box"
+              />
+              <div class="card-mobile-nombre">
+                <p class="nombreImagen">Oficina 35mt2</p>
+                <p class="ciudad">Las Condex</p>
+                <p class="precio">$1.800.000</p>
+              </div>
+              <button class="card-mobile-boton">Ver más</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+          <div class="contacto">
+            <h1>Contáctanos</h1>
+            <form>
+              <div class="campos">
+                <div class="row">
+                  <div class="label">Nombre:</div>
+                  <div class="campo">
+                    <input
+                      type="text"
+                      maxlength="50"
+                      placeholder="Escriba su nombre"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="label">Email:</div>
+                  <div class="campo">
+                    <input
+                      type="email"
+                      maxlength="50"
+                      placeholder="Correo electrónico"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="label">Teléfono:</div>
+                  <div class="campo">
+                    <input type="text" maxlength="50" placeholder="Teléfono" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="label">Mensaje:</div>
+                  <div class="campo">
+                    <textarea maxlength="500" rows="5"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <button class="card-mobile-boton">Enviar Mensaje</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <h3>
+          <span class="mdi mdi-facebook"></span>
+          <span class="mdi mdi-instagram"></span>
+          <p>Síguenos en nuestras redes sociales</p>
+          <p>
+            También puedes enviarnos un correo a
+            <a href="mailto:info@pf.cl?Subject=Contacto desde la página Web"
+              >info@pf.cl</a
+            >
+          </p>
+        </h3>
+      </footer>
+    </div>
+  </body>
+</html>
